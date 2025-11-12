@@ -11,6 +11,7 @@ main {background-color: #fff9e2; padding: 2em;}
 header {color: #fff9e2; background-image: url(headerlithics.jpg); background-size: 100% 100%; background-repeat: no-repeat; height: 240px; padding-left: 5em; padding-top: 2em;}
 header a {text-decoration: none; color:#fff9e2;}
 h2 {color:#414f16}
+summary {color: #414f16; font-size: 14pt;}
 table {width: 384px; height: 216px}
 th {text-align: left; vertical-align: bottom; font-size: 1em;}
 th a{text-decoration: none;}
