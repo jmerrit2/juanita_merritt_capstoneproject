@@ -16,13 +16,13 @@
         </ul>
     </nav>
     <div id="wrapper">
+        <div class="sidenav">       
+            <button class="tabLink" onclick="openTab(event, 'Archaeology')" id="default">What is Archeology?</button>
+            <button class="tabLink" onclick="openTab(event, 'Archaeologists')">What Do Archaeologists Do?</button>
+            <button class="tabLink" onclick="openTab(event, 'Curation')">What is Curation?</button>
+            <button class="tabLink" onclick="openTab(event, 'Collecting')">Collecting and Looting</button>
+        </div>
         <main>
-            <div class="sidenav">       
-                <button class="tabLink" onclick="openTab(event, 'Archaeology')" id="default">What is Archeology?</button>
-                <button class="tabLink" onclick="openTab(event, 'Archaeologists')">What Do Archaeologists Do?</button>
-                <button class="tabLink" onclick="openTab(event, 'Curation')">What is Curation?</button>
-                <button class="tabLink" onclick="openTab(event, 'Collecting')">Collecting and Looting</button>
-            </div>
             <div id="Archaeology" class="tabContent">
                 <h2>What is Archaeology</h2>
                 <p>Archaeology is the study of human past activity by analysis of artifacts, sites, and other remains. Instead of relying solely on written records or historic accounts, understanding how these physical remains fit into the broader human story archaeology provides a distinctive way to deepen our understanding of human culture, change over time, and the diverse experiences of people in the past.</p>
@@ -96,7 +96,7 @@
                 tabContent[i].style.display = "none";
             }
             for(i = 0; i < tabLink.length; i++){
-                tabLink[i].className.replace("active","");
+                tabLink[i].className = tabLink[i].className.replace(" active", "");
             }
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
