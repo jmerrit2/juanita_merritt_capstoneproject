@@ -17,35 +17,92 @@
     </nav>
     <div id="wrapper">
         <main>
-            <div class="sidenav">
-                <nav>
-                    <ul>
-                        <li><a href="about_archaeology.html">What is Archeology?</a></li>
-                        <li><a href="about_archaeologists.html">What Do Archaeologists Do?</a></li>
-                        <li><a href="about_curation.html">What is Curation?</a></li>
-                        <li><a href="about_looting.html">Collecting and Looting</a></li>
-                    </ul>
-                </nav>
-            </div>           
-            <h2>What Do Archaeologists Do?</h2>
-            <p>Archaeologists study the human past by examining the physical traces people left behind — everything from tools and pottery to buildings, landscapes, and even ancient trash. Their goal is to understand how people lived, worked, and interacted with their environment. Rather than just collecting artifacts, archaeologists analyze context — the exact location and relationships among objects, soil layers, and features — because this helps reconstruct how a site was used and what it reveals about past societies.</p>
-            <details>
-                <summary>Finding Archaeological Sites</summary>
-                <p>There are many ways to find a site, including written or oral records, ground surveys, using satellites, and sometimes even completely by accidents. There are also predictive models that analyze factors like distance from water, ground steepness, soil type, and other factors that influence where people settle or perform certain tasks. After conducting a survey, archaeologists need to evaluate the site's significance. Maybe there was no site. Maybe the site wasn't significant as determined by law. However, if the site was significant, further excavations may be planed.</p>
-            </details>
-            <details>
-                <summary>Collecting Data</summary>
-                <p>Doing excavations is only a small part of an archaeologist's work. Archeology is a destructive science, meaning that once a site has been disturbed, it can't be recreated. As a result, archaeologists must be thorough when doing research and collecting data. First, that must make detailed research plans and seek approval from the government to do an excavation. Next, before nay diging takes place, they grid the site, meaning they superimpose a grid over the site and carefully measure and identify each square. During the excavation, archaeologists must record the exact location of each artifact, both by the location on the grid and the depth in the soil.</p>
-            </details>
-            <details>
-                <summary>Labwork</summary>
-                <p>After fieldwork, archaeologists spend considerable time in the laboratory, cleaning, cataloging, and analyzing artifacts. They might use radiocarbon dating to estimate an object's age, study animal bones to understand diet, or analyze soil samples for evidence of ancient crops or climate conditions. They also interpret their findings in light of broader anthropological or historical questions, such as how trade networks developed or how social hierarchies changed over time.</p> 
-            </details>
+            <div class="sidenav">       
+                <button class="tabLink" onclick="openTab(event, 'Archaeology')" id="default">What is Archeology?</button>
+                <button class="tabLink" onclick="openTab(event, 'Archaeologists')">What Do Archaeologists Do?</button>
+                <button class="tabLink" onclick="openTab(event, 'Curation')">What is Curation?</button>
+                <button class="tabLink" onclick="openTab(event, 'Collecting')">Collecting and Looting</button>
+            </div>
+            <div id="Archaeology" class="tabContent">
+                <h2>What is Archaeology</h2>
+                <p>Archaeology is the study of human past activity by analysis of artifacts, sites, and other remains. Instead of relying solely on written records or historic accounts, understanding how these physical remains fit into the broader human story archaeology provides a distinctive way to deepen our understanding of human culture, change over time, and the diverse experiences of people in the past.</p>
+                <details>
+                    <summary>Types of Archeology</summary>
+                    <p>At its heart, archaeology is interdisciplinary: it draws on methods from anthropology, history, geology, biology, chemistry, and more. For example, archaeologists may study plant or animal remains (ecofacts) to understand diet or environment, stone tools (lithics) to investigate technology, or structural remains to explore social organization. They also emphasize the importance of context — the spatial and relational position of artifacts and features within a site. When an artifact is removed without documenting its exact location, its context is lost forever. That means archaeology is not just about collecting objects, but about carefully recording the details of an artifacts location and analyzing its relationship to its surroundings.</p>
+                </details>
+                <details>
+                    <summary>Archaeological Sites</summary>
+                    <p>An archaeological site is any place where there are physical remains of past human activities. Sites of archaeological investigation vary widely: they might be prehistoric campsites with no written record, or more recent historic urban ruins. They may vary in size, from the remains of a prehistoric campfire, to the site of a historic battlefield, to the ruins of an ancient city.</p>
+                </details>
+                <details>
+                    <summary>Do Archaeologists Study Dinosaurs?</summary>
+                    <p>No. Scientists who study dinosaurs are called paleontologists. Paleontoligists study the history of life on earth though fossils, including dinosaurs, animals, plants, and ven bacteria. Since both paleontologists and archaeologists study physical remains, they have a lot in common; they may even work together! Humans have been living with animals, such as dogs or livestock, for a long time. Even before that, ancient hunters were following specific prey, such as the wooly mammoth. Sometimes, studying animal remains can help archaeologists understand more about the relationships people has with them in the past. However, dinosaurs died out 65 million years ago, far before our earlist ancestors. So, dinosaurs fossils aren't usually helpful to archaeologists, unless the bones were used by humans.</p>
+                </details>
+            </div>
+            <div id="Archaeologists" class="tabContent">
+                <h2>What Do Archaeologists Do?</h2>
+                <p>Archaeologists study the human past by examining the physical traces people left behind — everything from tools and pottery to buildings, landscapes, and even ancient trash. Their goal is to understand how people lived, worked, and interacted with their environment. Rather than just collecting artifacts, archaeologists analyze context — the exact location and relationships among objects, soil layers, and features — because this helps reconstruct how a site was used and what it reveals about past societies.</p>
+                <details>
+                    <summary>Finding Archaeological Sites</summary>
+                    <p>There are many ways to find a site, including written or oral records, ground surveys, using satellites, and sometimes even completely by accidents. There are also predictive models that analyze factors like distance from water, ground steepness, soil type, and other factors that influence where people settle or perform certain tasks. After conducting a survey, archaeologists need to evaluate the site's significance. Maybe there was no site. Maybe the site wasn't significant as determined by law. However, if the site was significant, further excavations may be planed.</p>
+                </details>
+                <details>
+                    <summary>Collecting Data</summary>
+                    <p>Doing excavations is only a small part of an archaeologist's work. Archeology is a destructive science, meaning that once a site has been disturbed, it can't be recreated. As a result, archaeologists must be thorough when doing research and collecting data. First, that must make detailed research plans and seek approval from the government to do an excavation. Next, before nay diging takes place, they grid the site, meaning they superimpose a grid over the site and carefully measure and identify each square. During the excavation, archaeologists must record the exact location of each artifact, both by the location on the grid and the depth in the soil.</p>
+                </details>
+                <details>
+                    <summary>Labwork</summary>
+                    <p>After fieldwork, archaeologists spend considerable time in the laboratory, cleaning, cataloging, and analyzing artifacts. They might use radiocarbon dating to estimate an object's age, study animal bones to understand diet, or analyze soil samples for evidence of ancient crops or climate conditions. They also interpret their findings in light of broader anthropological or historical questions, such as how trade networks developed or how social hierarchies changed over time.</p> 
+                </details>
+            </div>
+            <div id="Curation" class="tabContent">
+                <h2>What is Curation?</h2>
+                <p>In archaeology, curation refers to the processes and practices involved in preserving, organizing, documenting, and providing access to the material and documentary remains from archaeological fieldwork: artifacts, ecofacts, samples, records, photographs, maps, databases, and so on. After the excavation or survey phase ends, the resulting collections dont simply get boxed up and forgotten; rather, they become part of a curated repository where long-term stewardship is critical.</p>
+                <details>
+                    <summary>Types of Repositories</summary>
+                    <p>Collections are stored at repositories, of which there are different kinds. If you've ever been to a history museum, you may have been to a repository. Museums are repositories with exhibit space. Exhibits are both a way to present curated collection to the public and a way to make money to fund curation. Usually, the artifacts seen in an exhibit are only a small portion of the items in a repository. Many repositories do not have exhibit space; these types of repositories are often on university campuses. They may loan artifacts to museum exhibits.</p>
+                </details>
+                <details>
+                    <summary>The Curation Process</summary>
+                    <p>Curation involves several steps. When a repository takes a collection, they must first ensure that the collection is in good condition and has enough information to connect it to its context. This may involve cataloging and stabilizing the artifacts, and compiling and organizing the data. The repository will most likely have a database to store and manage metadata. After the repository takes the collection, they must continue to provide physical care to the artifacts. Artifacts need to be stored in a way that protects them from physical damage, and from environmental damage, such as from humidity, temperature, or pests. Finally, curation must involve accessibility and re-use: collections should be accessible to researchers, descendant communities, educational users, and sometimes the public.</p>
+                </details>
+            </div>
+            <div id="Collecting" class="tabContent">
+                <h2>Collecting and Looting</h2>
+                <p>Looting and vandalism are two major challenges that threaten archaeological sites, and understanding them is essential for anyone studying or teaching about archaeology.</p>
+                <details>
+                    <summary>Looting</summary>
+                    <p>Looting refers to the unauthorized removal of artifacts or materials from an archaeological site. People may loot for profit, personal curiosity, or even out of a desire to collect pieces of the past. However, when objects are taken without proper documentation, their context—the exact location and relationship to other finds—is destroyed. This context is what gives artifacts their scientific and historical meaning. Without it, archaeologists lose critical information about how people lived, what they believed, and how societies changed over time</p>
+                </details>
+                <details>
+                    <summary>Vandalism</summary>
+                    <p>Vandalism involves the intentional defacement or destruction of archaeological features, objects, or landscapes. This might include graffiti, digging, breaking structures, or other acts that physically damage the site. Sometimes vandalism is deliberate, while other times it results from a lack of awareness—for example, visitors walking over fragile areas or handling artifacts without realizing the impact.</p>
+                </details>
+                <p>It's important to note that discussions of looting and vandalism arn't just about blame but about stewardship—it's our shared responsibility to care for cultural resources. Archaeological sites are nonrenewable; once they are disturbed, the knowledge they hold cannot be replaced. Educating the public, involving local and descendant communities, and promoting respectful visitation are positive ways to protect and celebrate our shared heritage.</p>
+            </div>
         </main>
         <footer>
             Photos courtesy of Waring Center<br>
             <a href="mailto:jmerrit2@my.westga.edu">jmerrit2@my.westga.edu</a>
         </footer>
     </div>
+    <script>
+        function openTab(evt, tabName){
+            var i, tabContent, tabLink;
+            tabContent = document.getElementsByClassName("tabContent");
+            tabLink = document.getElementsByClassName("tabLink");
+
+            for(i = 0; i < tabContent.length; i++){
+                tabContent[i].style.display = "none";
+            }
+            for(i = 0; i < tabLink.length; i++){
+                tabLink[i].className.replace("active","");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("default").click();
+    </script>
 </body>
 </html>
